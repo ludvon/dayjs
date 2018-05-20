@@ -29,7 +29,7 @@ Este objeto `Dayjs` é imutável, ou seja, todas as operações desta API irão 
 * [Visualização](#visualização)
   * [Formatar](#formatar)
   * [Diferença](#diferença)
-  * [Unix Timestamp (milliseconds)](#unix-timestamp-milisegundos-1)
+  * [Unix Timestamp (milliseconds)](#unix-timestamp-milissegundos-1)
   * [Unix Timestamp (seconds)](#unix-timestamp-segundos)
   * [Dias no Mês](#days-in-month)
   * [Como Date do Javascript](#como-date-do-javascript)
@@ -49,7 +49,7 @@ O Day.js sempre irá retornar um novo objeto `Dayjs` se nada for especificado.
 
 ### Criação
 
-Chame `dayjs()` passando um dos tipos de parâmetro disponíveis.
+Pode-se criar objetos Dayjs chamando `dayjs()`, passando um dos vários tipos de parâmetro disponíveis.
 
 #### Data e hora atual
 
@@ -61,7 +61,7 @@ dayjs();
 
 ### String
 
-Passando uma string que atende ao formato [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).
+String que atende ao formato [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).
 
 ```js
 dayjs(String);
@@ -70,7 +70,7 @@ dayjs('1995-12-25');
 
 ### Unix Timestamp (millisegundos)
 
-Passando um valor inteiro representando o número de milisegundos desde o Unix Epoch (meio-dia de 1º de janeiro de 1970, no fuso horário UTC).
+Valor inteiro representando o número de milissegundos desde o Unix Epoch (meio-dia de 1º de janeiro de 1970, no fuso horário UTC).
 
 ```js
 dayjs(Number);
@@ -79,7 +79,7 @@ dayjs(1318781876406);
 
 ### Date
 
-Passando um objeto Date nativo do Javascript.
+Objeto Date nativo do Javascript.
 
 ```js
 dayjs(Date);
@@ -183,7 +183,7 @@ As unidades não fazem distinção entre maiúsculas e minúsculas.
 
 ```js
 dayjs().set((unit: String), (value: Int));
-dayjs().set('month', 3); // April
+dayjs().set('month', 3); // Abril
 dayjs().set('second', 30);
 ```
 
@@ -244,7 +244,7 @@ Existem várias maneiras de mostrar o objeto `Dayjs` para o usuário.
 
 #### Formatar
 
-* retorna uma String
+* retorna uma string
 
 Recebe uma string com símbolos que serão substituídos por seus valores correspondentes.
 
@@ -288,18 +288,18 @@ Lista de todos os formatos disponíveis:
 
 * retorna um Number
 
-Diferença de dois objetos `Dayjs` em milisegundos ou outra unidade de tempo especificada.
+Diferença de dois objetos `Dayjs` em milissegundos ou outra unidade de tempo especificada.
 
 ```js
 dayjs().diff(Dayjs, unit);
 dayjs().diff(dayjs(), 'years'); // 0
 ```
 
-#### Unix Timestamp (milisegundos)
+#### Unix Timestamp (milissegundos)
 
 * retorna um Number
 
-Número de milisegundos desde o Unix Epoch.
+Número de milissegundos desde o Unix Epoch.
 
 ```js
 dayjs().valueOf();
@@ -347,7 +347,7 @@ dayjs().toArray(); //[2018, 8, 18, 00, 00, 00, 000];
 
 #### Como JSON
 
-* retorna um JSON String
+* retorna uma string
 
 Ao serializar um objeto `Dayjs` para JSON, retornará uma string no padrão ISO 8601.
 
@@ -357,7 +357,7 @@ dayjs().toJSON(); //"2018-08-08T00:00:00.000Z"
 
 #### Como String ISO 8601
 
-* retorna uma String
+* retorna uma string
 
 Retorna uma string no padrão ISO 8601.
 
@@ -377,7 +377,7 @@ dayjs().toObject(); // { years:2018, months:8, date:18, hours:0, minutes:0, seco
 
 #### Como String
 
-* retorna uma String
+* retorna uma string
 
 ```js
 dayjs().toString();

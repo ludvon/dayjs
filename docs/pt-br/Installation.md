@@ -1,6 +1,6 @@
-## Installation Guide
+## Guia de Instalação
 
-You have multiple ways of getting Day.js:
+Existem várias maneiras de incluir o Day.js em seu projeto:
 
 * Via NPM:
 
@@ -10,7 +10,7 @@ npm install dayjs --save
 
 ```js
 import dayjs from 'dayjs'
-// Or CommonJS
+// Ou CommonJS
 // var dayjs = require('dayjs');
 dayjs().format();
 ```
@@ -18,13 +18,13 @@ dayjs().format();
 * Via CDN:
 
 ```html
-<!-- Latest compiled and minified JavaScript -->
+<!-- Javascript compilado e minificado mais recente -->
 <script src="https://unpkg.com/dayjs"></script>
 <script>
   dayjs().format();
 </script>
 ```
 
-* Via download and self-hosting:
+* Via download e self-hosting:
 
-Just download the latest version of Day.js at [https://unpkg.com/dayjs/](https://unpkg.com/dayjs/)
+Simplesmente baixe a última versão do Day.js: [https://unpkg.com/dayjs/](https://unpkg.com/dayjs/)
