@@ -45,13 +45,10 @@ Instead of modifying the native `Date.prototype`, Day.js creates a wrapper for t
   * [Is Leap Year](#is-leap-year)
 
 ---
-Day.js will always return a new `Dayjs` object if not specified.
 
-### Parse
+## Parsing
 
-Simply call `dayjs()` with one of the supported input types.
-
-#### Now
+#### Now `Dayjs`
 
 To get the current date and time, just call dayjs() with no parameters.
 
@@ -59,143 +56,102 @@ To get the current date and time, just call dayjs() with no parameters.
 dayjs();
 ```
 
-### String
+#### Dayjs parsed from other date formats `Dayjs`
 
-Creating from a string matches [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format.
+* [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string
 
 ```js
 dayjs(String);
 dayjs('1995-12-25');
 ```
 
-### Unix Timestamp (milliseconds)
-
-Passing an integer value representing the number of milliseconds since the Unix Epoch (Jan 1 1970 12AM UTC).
+* Unix Timestamp (milliseconds since the Unix Epoch - Jan 1 1970 12AM UTC)
 
 ```js
 dayjs(Number);
 dayjs(1318781876406);
 ```
 
-### Date
-
-Passing a pre-existing native Javascript Date object.
+* native Javascript Date object
 
 ```js
 dayjs(Date);
 dayjs(new Date(2018, 8, 18));
 ```
 
-### Clone
+#### Clone `Dayjs`
 
 All `Dayjs` are immutable. If you want a copy of the object, just call `.clone()`.
-Calling dayjs() on a `Dayjs` object will also clone it.
+Calling `dayjs()` on a `Dayjs` object will also clone it.
 
 ```js
 dayjs(Dayjs);
 dayjs().clone();
 ```
 
-### Validation
+#### Validation `boolean`
 
-* returns a Boolean
-
-Check whether the `Dayjs` object considers the date invalid.
+Whether the `Dayjs` object considers the date invalid.
 
 ```js
 dayjs().isValid();
 ```
 
----
-
-### Get + Set
+## Get + Set
 
 Get and set date.
 
-#### Year
-
-* returns a Number
-
-Get year.
+#### Year `number`
 
 ```js
 dayjs().year();
 ```
 
-#### Month
-
-* returns a Number
-
-Get month.
+#### Month `number`
 
 ```js
 dayjs().month();
 ```
 
-#### Date of Month
-
-* returns a Number
-
-Get day of the month.
+#### Day of the Month `number`
 
 ```js
 dayjs().date();
 ```
 
-#### Day of Week
-
-* returns a Number
-
-Get day of the week.
+#### Day of the Week `number`
 
 ```js
 dayjs().day();
 ```
 
-#### Hour
-
-* returns a Number
-
-Get hour.
+#### Hour `number`
 
 ```js
 dayjs().hour();
 ```
 
-#### Minute
-
-* returns a Number
-
-Get minute.
+#### Minute `number`
 
 ```js
 dayjs().minute();
 ```
 
-#### Second
-
-* returns a Number
-
-Get second.
+#### Second `number`
 
 ```js
 dayjs().second();
 ```
 
-#### Millisecond
-
-* returns a Number
-
-Get millisecond.
+#### Millisecond `number`
 
 ```js
 dayjs().millisecond();
 ```
 
-#### Set
+#### Set `Dayjs`
 
-Date setter.
-Units are case insensitive
+Units are case insensitive.
 
 ```js
 dayjs().set((unit: String), (value: Int));
@@ -203,9 +159,7 @@ dayjs().set('month', 3); // April
 dayjs().set('second', 30);
 ```
 
----
-
-### Manipulate
+## Manipulate
 
 Once you have a `Dayjs` object, you may want to manipulate it in some way like this:
 
