@@ -10,7 +10,7 @@ npm install dayjs --save
 
 ```js
 import dayjs from 'dayjs'
-// Ou CommonJS
+// Ou se preferir CommonJS
 // var dayjs = require('dayjs');
 dayjs().format();
 ```

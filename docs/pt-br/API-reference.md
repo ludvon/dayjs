@@ -1,6 +1,6 @@
 ## Referência da API
 
-Ao invés de modificar o 'Date.prototype' nativo, o Day.js embala o objeto nativo Date em um objeto `Dayjs`.
+Ao invés de modificar o 'Date.prototype' nativo, o Day.js empacota o objeto nativo Date em um objeto `Dayjs`.
 
 Este objeto `Dayjs` é imutável, ou seja, todas as operações desta API irão retornar um novo objeto `Dayjs`.
 
