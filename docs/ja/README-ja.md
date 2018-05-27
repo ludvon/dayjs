@@ -1,5 +1,3 @@
-[English](../../README.md) | [简体中文](../../README.zh-CN.md) | 日本語
-
 <p align="center"><a href="#" target="_blank" rel="noopener noreferrer"><img width="550"
                                                                              src="https://user-images.githubusercontent.com/17680888/39081119-3057bbe2-456e-11e8-862c-646133ad4b43.png"
                                                                              alt="Day.js"></a></p>
@@ -88,9 +86,9 @@ dayjs('2018-05-05').locale('zh-cn').format() // 簡体字中国語を特定の�
 プラグインとは、 Day.js の機能を拡張したり、新たな機能を追加するための独立したモジュールのことです。
 
 ```javascript
-import AdvancedFormat from 'dayjs/plugin/AdvancedFormat' // 必要に応じて読み込み
+import advancedFormat from 'dayjs/plugin/advancedFormat' // 必要に応じて読み込み
 
-dayjs.extend(AdvancedFormat) // プラグインを使用
+dayjs.extend(advancedFormat) // プラグインを使用
 
 dayjs().format('Q Do k kk X x') // 多様なフォーマットが利用可能に
 ```

@@ -1,5 +1,3 @@
-[English](../../README.md) | [简体中文](../../README.zh-CN.md) | Português Brasileiro
-
 <p align="center"><a href="#" target="_blank" rel="noopener noreferrer"><img width="550"
                                                                              src="https://user-images.githubusercontent.com/17680888/39081119-3057bbe2-456e-11e8-862c-646133ad4b43.png"
                                                                              alt="Day.js"></a></p>
@@ -86,9 +84,9 @@ dayjs('2018-05-05').locale('pt-br').format() // usar locale em português brasil
 Um plugin é um módulo independente que pode ser adicionado ao Day.js para estendê-lo com mais funcionalidades.
 
 ```javascript
-import AdvancedFormat from 'dayjs/plugin/AdvancedFormat' // carregar sob demanda
+import advancedFormat from 'dayjs/plugin/advancedFormat' // carregar sob demanda
 
-dayjs.extend(AdvancedFormat) // usar plugin
+dayjs.extend(advancedFormat) // usar plugin
 
 dayjs().format('Q Do k kk X x') // mais formatos disponíveis pelo plugin
 ```
